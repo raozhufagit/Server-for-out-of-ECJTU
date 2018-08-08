@@ -1,0 +1,4 @@
+<asp:TextBox ID="txtSignTime" runat="server" Width="350px"></asp:TextBox>
+                    
+                    <img class="HerCss" onclick="var dataString = showModalDialog('../JS/calendar.htm', 'yyyy-mm-dd' ,'dialogWidth:286px;dialogHeight:221px;status:no;help:no;');if(dataString==null){}else{document.getElementById('txtSignTime').value=dataString;}"
+                        src="../images/Button/search.gif" />

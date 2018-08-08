@@ -1,0 +1,20 @@
+create table LCXContractManage(
+ID int primary key identity not null,
+ContractNo nvarchar(20) unique,
+ContractName nvarchar(60),
+ContractType nvarchar(60),
+DepartmentA nvarchar(120),
+DepartmentB nvarchar(120),
+SignatoryA nvarchar(20),
+SignatoryB nvarchar(20),
+SignTime datetime,
+EndTime datetime,
+WhetherSecrecy nvarchar(5),
+ContractContent nvarchar(max),
+Remarks nvarchar(200),
+Project nvarchar(100),
+Agreement nvarchar(100),
+Attachment nvarchar(200)
+);
+
+ContractNo,ContractName,ContractType,DepartmentA,DepartmentB,SignatoryA,SignatoryB,SignTime,EndTime,WhetherSecrecy,ContractContent,Remarks,Project,Agreement,Attachment 
