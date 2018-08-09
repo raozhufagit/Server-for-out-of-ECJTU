@@ -11,6 +11,13 @@
         document.getElementById("PrintHide") .style.visibility="visible"    
     }
   </script>
+        <style type="text/css">
+            .auto-style2 {
+                width: 300px;
+                height: 25px;
+                background-color: #D6E2F3;
+            }
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -29,25 +36,26 @@
             <td height="3px" colspan="2" style="background-color: #ffffff"></td>
         </tr>
         </table>
-    <table style="width: 100%" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+    <table style="width: 600px;  margin:0px auto;"   bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
 		<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		项目名称：
 	</td>
-	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
+
+	<td style="padding-left: 5px;  background-color: #ffffff;"  >
 		<asp:Label id="ProjectName" runat="server"></asp:Label>
         &nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink1" runat="server" Font-Underline="True" ForeColor="Blue"
             NavigateUrl="TuXingJinDu.aspx?ProjectName=0">图形化进度显示</asp:HyperLink></td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		项目状态：
 	</td>
-	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
+	<td style="padding-left: 5px; background-color: #ffffff" class="auto-style2" >
 		<asp:Label id="ProjectSerils" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		甲方客户单位：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
@@ -55,7 +63,7 @@
 	</td>
         </tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		甲方项目负责人姓名：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
@@ -63,7 +71,7 @@
 	</td>
         </tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		甲方项目负责人电话：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
@@ -71,7 +79,7 @@
 	</td>
         </tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		甲方项目负责人电子邮箱：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
@@ -79,7 +87,7 @@
 	</td>
         </tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		项目合作方式及内容：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
@@ -87,7 +95,7 @@
 	</td>
         </tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		校内学院推送：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
@@ -95,63 +103,63 @@
 	</td>
 	</tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		预计成交日期：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="YuJiChengJiaoRiQi" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		提醒日期：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="TiXingDate" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		校内负责人：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="FuZeRen" runat="server" Text="暂无"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		项目金额：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="XiangMuJinE" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		项目配合人：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="PeiHeRenList" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		发布人：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="UserName" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		更新时间：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="TimeStr" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		合同以及附件：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
 		<asp:Label id="HeTongAndFuJian" runat="server"></asp:Label>
 	</td></tr>
 	<tr>
-	<td style="width: 170px; height: 25px; background-color: #D6E2F3" align="right">
+	<td class="auto-style2" align="right">
 		验收方式及其他说明：
 	</td>
 	<td style="padding-left: 5px; height: 25px; background-color: #ffffff" >
