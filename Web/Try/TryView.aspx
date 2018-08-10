@@ -6,24 +6,17 @@
 	<head>
 		<title><%=System.Configuration.ConfigurationManager.AppSettings["SYSTitle"]%></title>
   <LINK href="../Style/Style.css" type="text/css" rel="STYLESHEET">
-  <script language="javascript">
-  function PrintTable()
-    {
-        document.getElementById("PrintHide") .style.visibility="hidden"    
-        print();
-        document.getElementById("PrintHide") .style.visibility="visible"    
-    }
-  </script>
+  
         <style type="text/css">
             .auto-style2 {
                 height: 25px;
             }
             .auto-style3 {
-                width: 100px;
+                width: 50%;
                 height: 25px;
             }
-            .auto-style4 {
-                width: 409px;
+            .auto-style7 {
+                width: 1000px;
                 height: 25px;
             }
         </style>
@@ -45,13 +38,21 @@
             <td height="3px" colspan="2" style="background-color: #ffffff"></td>
         </tr>
         </table>
-    <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+          <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+             <tr>
+            <td style="background-color: #D6E2F3; width:1000px" align="center" class="auto-style7"  >
+                   填写基本信息：
+                </td>
+                
+              </tr> 
+            </table>
+    <table style="width: 1000px; margin:0px auto;"  bgcolor="#999999" border="0" cellpadding="2" cellspacing="1" >
 		<tr>
-	 <td style="width: 100px !important; height: 25px; background-color: #D6E2F3" align="right">
+	 <td style="background-color: #D6E2F3" align="right" class="auto-style3">
                     用户名：
                 </td>
                 <td style="padding-left: 5px; height: 25px; width:100px; background-color: #ffffff">
-                    <asp:Label ID="lblUserName" runat="server" Width="140px"></asp:Label>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                    
                 </td>
                 
@@ -62,17 +63,17 @@
                     用户名：
                 </td>
                <td style="padding-left: 5px; height: 25px; width:100px; background-color: #ffffff">
-                    <asp:Label ID="Label1" runat="server" Width="140px"></asp:Label>
+                   <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                    
                 </td>
                 
             </tr>
        <tr>
-	 <td style="width: 100px !important; height: 25px; background-color: #D6E2F3" align="right">
+	 <td style=" background-color: #D6E2F3" align="right" class="auto-style3">
                     用户名：
                 </td>
                <td style="padding-left: 5px; height: 25px; width:100px; background-color: #ffffff">
-                    <asp:Label ID="Label3" runat="server" Width="140px"></asp:Label>
+                   <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                    
                 </td>
                 
@@ -83,17 +84,17 @@
                     用户名：
                 </td>
                 <td style="padding-left: 5px; height: 25px; width:100px; background-color: #ffffff">
-                    <asp:Label ID="Label5" runat="server" Width="140px"></asp:Label>
+                   <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                    
                 </td>
                
             </tr>
         <tr>
-	 <td style="width: 100px !important;  height: 25px; background-color: #D6E2F3" align="right">
+	 <td style=" background-color: #D6E2F3" align="right" class="auto-style3">
                     用户名：
                 </td>
-                <td style="padding-left: 5px; height: 25px; background-color: #ffffff">
-                    <asp:Label ID="Label7" runat="server" Width="140px"></asp:Label>
+                <td style="padding-left: 5px; background-color: #ffffff" class="auto-style2">
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                    
                 </td>
                
@@ -105,23 +106,90 @@
                     用户名：
                 </td>
                 <td style="padding-left: 5px; background-color: #ffffff" class="auto-style2">
-                    <asp:Label ID="Label9" runat="server" Width="140px"></asp:Label>
+                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                    
                 </td>
                
             </tr>
 	
 </table>
-        <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+          <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
              <tr>
-            <td style="background-color: #D6E2F3" align="right" class="auto-style4">
+            <td style="background-color: #D6E2F3; width:1000px" align="center" class="auto-style7"  >
+                    审批信息：
+                </td>
+                
+              </tr> 
+            </table>
+        <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+            
+             <tr>
+            <td style="background-color: #D6E2F3" align="right" class="auto-style3">
+                    填写报告：
+                </td>
+                <td style="padding-left: 5px; background-color: #ffffff" class="auto-style2">
+                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                   
+                </td>
+               </tr>
+              <tr>
+           <td style="background-color: #D6E2F3" align="right" class="auto-style3">
                     评审信息：
                 </td>
                 <td style="padding-left: 5px; background-color: #ffffff" class="auto-style2">
-                    <asp:Label ID="Label2" runat="server" Width="140px"></asp:Label>
+                   <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
                    
                 </td>
                
+                    <tr>
+            <td style="background-color: #D6E2F3" align="right" class="auto-style3">
+                    评审信息：
+                </td>
+                <td style="padding-left: 5px; background-color: #ffffff" class="auto-style2">
+                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                   
+                </td>
+               
+            </tr>
+            </tr>
+            </table>
+         <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+             <tr>
+            <td style="background-color: #D6E2F3; width:1000px" align="center" class="auto-style7"  >
+                   填写报告：
+                </td>
+                
+              </tr> 
+            </table>
+         <table style="width: 1000px; margin:0px auto;" bgcolor="#999999" border="0" cellpadding="2" cellspacing="1">
+             <tr>
+            <td style="background-color: #D6E2F3" align="right" class="auto-style3">
+                    填写报告：
+                </td>
+                <td style="padding-left: 5px; background-color: #ffffff" class="auto-style3">
+                    <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                   
+                </td>
+               </tr>
+                 <tr>
+            <td style="background-color: #D6E2F3" align="right" class="auto-style3">
+                    填写报告：
+                </td>
+                <td style="padding-left: 5px; background-color: #ffffff" class="auto-style3">
+                    <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                   
+                </td>
+               
+            </tr>
+                 <tr>
+            <td style="background-color: #D6E2F3"  align="right" class="auto-style3">
+                    填写报告：
+                </td>
+                <td style="padding-left: 5px; background-color: #ffffff" class="auto-style3">
+                   <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                   
+                </td>
+
             </tr>
             </table>
 </div>
